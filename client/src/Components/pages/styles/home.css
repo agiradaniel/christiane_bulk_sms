@@ -1,0 +1,138 @@
+.itemButton :hover{
+    background-color: black;
+}
+.summarysection{
+  background: #4e54c8;  /* fallback for old browsers */
+  background: -webkit-linear-gradient(to right, #8f94fb, #4e54c8);  /* Chrome 10-25, Safari 5.1-6 */
+  background: linear-gradient(to right, #8f94fb, #4e54c8); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+  color: #fff;
+  border: 3px solid #eee;
+}
+
+.disabled{
+  cursor: not-allowed
+}
+.top-banner{
+  height:150px ;
+  margin: 0;
+  padding:0
+}
+
+/*Desktop*/
+@media only screen and (min-width: 1023px) {
+  .summary{
+    height:400px;
+    width:21%; 
+    position:absolute;
+    right:30px;
+    top:250px;
+    border-radius:10px;
+    padding: 10px;
+  }
+  .criteriasection{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    width: 50%;
+    margin: auto;
+    
+  }
+  .messagesection{
+    margin:50px auto 0px;
+    width:45%
+  }
+  .inputDiv input{
+    width:120px
+  }
+  .studentlist{
+    margin: 20px auto;
+    width: 47%
+  }
+  .studenttablediv{
+    min-height:600px;
+    background-color:#EBEEF0; 
+    border-radius:10px;
+    margin-top:20px;
+    overflow: auto;
+  }
+}
+/*Mobile*/
+@media only screen and (max-width: 700px) {
+  .summary{
+    height:320px;
+    width:80%;
+    border-radius:10px;
+    margin:auto;
+    
+  }
+  .criteriasection{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    width:60%;
+    text-align: center;
+    margin: auto;
+  }
+  .messagesection{
+    margin:50px auto 0px;
+    width:80%;
+    text-align: center;
+  }
+  .inputDiv input{
+    width:60%
+  }
+  .criteriabutton{
+    width:60%
+  }
+  .studentlist{
+    margin: 20px auto;
+    width: 80%
+  }
+  .studenttablediv{
+    max-height:300px;
+    background-color:#EBEEF0; 
+    border-radius:10px;
+    margin-top:20px;
+    overflow: auto;
+    min-height: 300px;
+  }
+  
+}
+/*Tablet*/
+@media only screen and (min-width: 700px) and  (max-width: 1023px) {
+  .summary{
+    height:340px;
+    width:80%; 
+    border-radius:10px;
+    margin:auto;
+  }
+  .criteriasection{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    width:50%;
+    margin: auto;
+  }
+  .messagesection{
+    margin:50px auto 0px;
+    width:70%
+  }
+  .inputDiv input{
+    width:60%
+  }
+  .criteriabutton{
+    width:60%
+  }
+  .studentlist{
+    margin: 20px auto;
+    width: 80%
+  }
+  .studenttablediv{
+    max-height:300px;
+    background-color:#EBEEF0; 
+    border-radius:10px;
+    margin-top:20px;
+    overflow: auto;
+    min-height: 300px;
+  }
+}
